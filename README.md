@@ -42,7 +42,7 @@ ThreadHandler checks the available number of cores and spawns that many threads 
 
 ## Running TestThreadHandler ##
 1) cd test (TestThreadHandler binary is located)
-2) ./TestThreadHandler /path of the folder having music files to process
+2) ./TestThreadHandler "/path of the folder having music files to process"
 
  *Note: I added data folder which has some .wav files for the testing purpose.*
 
