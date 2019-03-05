@@ -40,6 +40,12 @@ TestThreadHandler can provide data(list of .wav files to be processed) to the th
 In my case I followed the first approach i.e list of tasks are provided during instantiating the ThreadHandler class object.
 ThreadHandler checks the available number of cores and spawns that many threads to process given list of tasks.
 
+## Running TestThreadHandler ##
+1) cd test (TestThreadHandler binary is located)
+2) ./TestThreadHandler /path of the folder having music files to process
+
+ *Note: I added data folder which has some .wav files for the testing purpose.*
+
 ## Possible Enhancements ##
 If the use case falls in 2nd category, then remove the "context->mTaskList.empty()" from the threadFunc and 
 add the mechanism of setting "mStopThreadHandler" using setter function. Application can set this data member, which inturn will close all spawn threads.
